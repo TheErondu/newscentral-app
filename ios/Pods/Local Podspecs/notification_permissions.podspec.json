@@ -1,0 +1,31 @@
+{
+  "name": "notification_permissions",
+  "version": "0.4.4",
+  "summary": "A plugin to check and ask for notification permissions",
+  "description": "A plugin to check and ask for notification permissions",
+  "homepage": "http://example.com",
+  "license": {
+    "file": "../LICENSE.md"
+  },
+  "authors": {
+    "Your Company": "email@example.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "dependencies": {
+    "Flutter": [
+
+    ]
+  },
+  "swift_versions": "5.0",
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "swift_version": "5.0"
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "75721020174",
+    "firebase_url": "https://newscentral-app.firebaseio.com",
+    "project_id": "newscentral-app",
+    "storage_bucket": "newscentral-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75721020174:android:b2f89466999dca54dc7d5f",
+        "android_client_info": {
+          "package_name": "app.newscentral.africa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75721020174-b4oua7144eqsq54ude2nvnrubpk4kels.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvuJMmsOSYlVg5QmhAc-dm71w27eKYw0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75721020174-b4oua7144eqsq54ude2nvnrubpk4kels.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
