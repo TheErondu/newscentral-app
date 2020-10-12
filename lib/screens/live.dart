@@ -25,7 +25,7 @@ class _LiveState extends State<Live> {
     super.initState();
     _isPlayerReady = false;
     _controller = YoutubePlayerController(
-      initialVideoId: ('exAck2FkKsc'),
+      initialVideoId: ('eBicS3yg03c'),
       flags: const YoutubePlayerFlags(
         mute: false,
         autoPlay: true,

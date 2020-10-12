@@ -46,7 +46,7 @@ class _ItemDeepLinkState extends State<ItemDeepLink> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           const Text(
-                            'Opps, this blog seems no longer exist',
+                            'Opps, this story no longer exists',
                             style: TextStyle(color: Colors.black),
                           ),
                           FlatButton(

@@ -112,7 +112,7 @@ class MyAppState extends State<MyApp>
             ],
             child: MaterialApp(
               debugShowCheckedModeBanner: false,
-              title: 'News Central',
+              title: 'News Central TV',
               locale: Locale(
                   Provider.of<AppModel>(context, listen: false).locale, ""),
               navigatorObservers: [

@@ -244,16 +244,20 @@ class _OneQuarterImageTypeState extends State<OneQuarterImageType>
                                     ),
                           ),
                         ),
-                        HtmlWidget(
-                          widget.item.content,
-                          hyperlinkColor:
-                              Theme.of(context).primaryColor.withOpacity(0.9),
-                          textStyle:
-                              Theme.of(context).textTheme.bodyText2.copyWith(
-                                    fontSize: 13.0,
-                                    height: 1.4,
-                                    color: Theme.of(context).accentColor,
-                                  ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 5, horizontal: 15),
+                          child: HtmlWidget(
+                            widget.item.content,
+                            hyperlinkColor:
+                                Theme.of(context).primaryColor.withOpacity(0.9),
+                            textStyle:
+                                Theme.of(context).textTheme.bodyText2.copyWith(
+                                      fontSize: 13.0,
+                                      height: 1.4,
+                                      color: Theme.of(context).accentColor,
+                                    ),
+                          ),
                         ),
                         RelatedBlogList(
                           categoryId: widget.item.categoryId,
