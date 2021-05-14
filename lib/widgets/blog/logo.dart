@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../common/constants.dart';
 import '../../common/tools.dart';
-import 'search/custom_search.dart';
-import 'search/custom_search_page.dart' as search;
+import 'package:fluxnews/screens/live.dart';
 
 class Logo extends StatelessWidget {
   final config;
@@ -46,16 +45,18 @@ class Logo extends StatelessWidget {
                   // top: 55,
                   right: 10,
                   child: IconButton(
-                    icon: Icon(
-                      Icons.search,
-                      color: config['color'] != null
-                          ? HexColor(config['color'])
-                          : Theme.of(context).accentColor.withOpacity(0.6),
-                      size: 22,
+                    icon: const Icon(
+                      Icons.live_tv,
+                      color: Colors.red,
+                      size: 30,
                     ),
                     onPressed: () {
-                      search.showSearch(
-                          context: context, delegate: CustomSearch());
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Live(),
+                        ),
+                      );
                     },
                   ),
                 ),

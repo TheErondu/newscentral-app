@@ -253,7 +253,7 @@ class BlogItem extends StatelessWidget {
                 Text(
                   blogs[index].date == ''
                       ? 'Loading ...'
-                      : Tools.getTime(blogs[index].date, context: context),
+                      : Tools.displayTimeAgoFromTimestamp(blogs[index].date),
                   style: type == 'fullSizeImageType'
                       ? TextStyle(fontSize: titleFontSize, color: Colors.white)
                       : TextStyle(

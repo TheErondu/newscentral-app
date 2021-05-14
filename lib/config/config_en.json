@@ -1,123 +1,157 @@
 {
-  "HorizonLayout":[
-  {
-  "showMenu":true,
-  "showLogo":true,
-  "layout":"logo",
-  "image":"assets/images/logo.gif",
-  "showSearch":true
-  },
-  {
-  "title":"The Hub for stories across Africa",
-  "fontSize":30,
-  "isSafeArea":false,
-  "layout":"header_text",
-  "padding":20
-  },
-  {
-  "design":"default",
-  "radius":2,
-  "isSlider":true,
-  "showBackGround":true,
-  "items":[
-  {
-  "image":"https://i.imgur.com/tuZqHlF.png",
-  "category":247,
-  "padding":15
-  }
+  "HorizonLayout": [
+    {
+      "showMenu": true,
+      "showLogo": true,
+      "layout": "logo",
+      "image": "assets/images/logo.gif",
+      "showSearch": true
+    },
+    {
+      "title": "The Hub for stories across Africa",
+      "fontSize": 30,
+      "isSafeArea": false,
+      "layout": "header_text",
+      "padding": 20
+    },
+    {
+      "design": "default",
+      "radius": 2,
+      "isSlider": true,
+      "showBackGround": true,
+      "items": [
+        {
+          "image": "https://i.imgur.com/tuZqHlF.png",
+          "category": 247,
+          "padding": 15
+        }
+      ],
+      "layout": "bannerImage"
+    },
+    {
+      "VerticalLayout": {
+        "layout": "card",
+        "name": "News",
+        "imageBorder": 20
+      }
+    },
+    {
+      "category": 298,
+      "layout": "sliderList",
+      "type": "imageOnTheLeft",
+      "name": "Latest News",
+      "imageBorder": 20
+    },
+    {
+      "layout": "sliderList",
+      "name": "Politics",
+      "type": "imageOnTheLeft",
+      "category": 5,
+      "imageBorder": 6
+    },
+    {
+      "layout": "sliderList",
+      "name": "Business",
+      "type": "imageOnTheLeft",
+      "category": 2,
+      "imageBorder": 6
+    },
+    {
+      "layout": "sliderList",
+      "name": "Sports",
+      "type": "imageOnTheLeft",
+      "category": 6,
+      "imageBorder": 6
+    },
+    {
+      "layout": "sliderList",
+      "name": "Entertainment",
+      "type": "imageOnTheLeft",
+      "category": 35454,
+      "imageBorder": 6
+    },
+    {
+      "category": 247,
+      "layout": "sliderList",
+      "type": "imageOnTheLeft",
+      "name": "Most Read",
+      "imageBorder": 20
+    }
   ],
-  "layout":"bannerImage"
+  "Setting": {
+    "MainColor": "#951512",
+    "ProductListLayout": "list",
+    "StickyHeader": true
   },
-  {
-  "category":247,
-  "layout":"sliderList",
-  "type":"imageOnTheLeft",
-  "name":"Top Stories",
-  "imageBorder":20
-  },
-  {
-  "layout":"sliderList",
-  "name":"Politics",
-  "type":"imageOnTheLeft",
-  "category":5,
-  "imageBorder":6
-  }
+  "TabBar": [
+    {
+      "layout": "home",
+      "icon": "assets/icons/tabs/icon-home.png",
+      "text": "Home",
+      "pos": 100,
+      "size": 30
+    },
+    {
+      "pos": 300,
+      "showChat": false,
+      "icon": "assets/icons/tabs/icon-wishlist.png",
+      "layout": "wishlist"
+    },
+    {
+      "pos": 400,
+      "icon": "assets/icons/tabs/icon-search.png",
+      "layout": "search"
+    },
+    {
+      "layout": "profile",
+      "settings": [
+        "wishlist",
+        "post",
+        "notifications",
+        "language",
+        "darkTheme",
+        "privacy"
+      ],
+      "showChat": false,
+      "icon": "assets/icons/tabs/icon-settings.png",
+      "pos": 500
+    }
   ],
-  "Setting":{
-  "MainColor":"#951512",
-  "ProductListLayout":"list",
-  "StickyHeader":true
+  "Drawer": {
+    "logo": "assets/images/settings-back.jpg",
+    "items": [
+      {
+        "type": "home",
+        "show": true
+      },
+      {
+        "type": "web",
+        "show": true
+      },
+      {
+        "type": "live",
+        "show": true
+      },
+      {
+        "type": "submissions",
+        "show": true
+      },
+      {
+        "type": "about",
+        "show": true
+      },
+      {
+        "type": "login",
+        "show": false
+      },
+      {
+        "type": "category",
+        "show": true
+      }
+    ]
   },
-  "TabBar":[
-  {
-  "layout":"home",
-  "icon":"assets/icons/tabs/icon-home.png",
-  "text":"Home",
-  "pos":100,
-  "size":30
-  },
-  {
-  "pos":300,
-  "showChat":false,
-  "icon":"assets/icons/tabs/icon-wishlist.png",
-  "layout":"wishlist"
-  },
-  {
-  "pos":400,
-  "icon":"assets/icons/tabs/icon-search.png",
-  "layout":"search"
-  },
-  {
-  "layout":"profile",
-  "settings":["wishlist",
-  "post",
-  "notifications",
-  "language",
-  "darkTheme",
-  "privacy"],
-  "showChat":false,
-  "icon":"assets/icons/tabs/icon-settings.png",
-  "pos":500
+  "SplashScreen": {
+    "data": "assets/images/splashscreen.png",
+    "type": "animated"
   }
-  ],
-  "Drawer":{
-  "logo":"assets/images/settings-back.jpg",
-  "items":[
-  {
-  "type":"home",
-  "show":true
-  },
-  {
-  "type":"web",
-  "show":true
-  },
-  {
-  "type":"live",
-  "show":true
-  },
-  {
-  "type":"submissions",
-  "show":false
-  },
-  {
-  "type":"about",
-  "show":true
-  },
-  {
-  "type":"login",
-  "show":false
-  },
-  {
-  "type":"category",
-  "show":true
-  }
-  ]
-  },
-  "VerticalLayout":{
-  "name":"News on the Hour",
-  "layout":"card"
-  },
-  "SplashScreen":{
-  "data":"assets/images/splashscreen.png",
-  "type":"animated"}
 }

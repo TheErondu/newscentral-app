@@ -112,16 +112,14 @@ class WordPress {
       }
 
       return list;
-    // ignore: empty_catches
-    } catch (e) {
-
-    }
+      // ignore: empty_catches
+    } catch (e) {}
   }
 
   Future<List<Category>> getCategories({lang = "en"}) async {
     try {
       var response = await blogApi.getAsync(
-          "categories?per_page=100&hide_empty=0&exclude=257,247,198,249,253,292,202,300,293,215,293,33978,33977,33968,33997,33967,33962,33999,1,15725");
+          "categories?per_page=100&hide_empty=0&orderby=count&order=desc&exclude=257,247,198,249,253,292,202,300,293,215,293,33978,33977,33968,33997,33967,33962,33999,1,15725");
       print('responseee $response');
       List<Category> list = [];
       for (var item in response) {

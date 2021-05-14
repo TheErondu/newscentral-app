@@ -21,7 +21,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
       backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
         title: Text(
-          S.of(context).listMessages,
+          S.of(context).announcement,
           style: TextStyle(color: Theme.of(context).accentColor),
         ),
         centerTitle: true,

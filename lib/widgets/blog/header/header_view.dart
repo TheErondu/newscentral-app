@@ -35,7 +35,7 @@ class HeaderView extends StatelessWidget {
                 S.of(context).seeAll,
                 style: TextStyle(
                     fontSize: 14,
-                    fontWeight: FontWeight.w300,
+                    fontWeight: FontWeight.w800,
                     color: Theme.of(context).primaryColor),
               ),
             ),

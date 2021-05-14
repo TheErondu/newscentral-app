@@ -219,7 +219,7 @@ class BlogItem extends StatelessWidget {
                   Text(
                     blogs[index].date == ''
                         ? 'Loading ...'
-                        : Tools.getTime(blogs[index].date, context: context),
+                        : Tools.displayTimeAgoFromTimestamp(blogs[index].date),
                     style: TextStyle(
                       color: Theme.of(context).accentColor,
                     ),

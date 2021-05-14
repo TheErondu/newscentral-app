@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:notification_permissions/notification_permissions.dart';
 import 'package:provider/provider.dart';
 import 'package:rate_my_app/rate_my_app.dart';
-
+import 'package:fluxnews/screens/home/home.dart';
 import '../common/constants.dart';
 import '../common/styles.dart';
 import '../generated/l10n.dart';
@@ -329,7 +329,7 @@ class SettingScreenState extends State<SettingScreen>
                                     size: 24,
                                     color: Theme.of(context).accentColor,
                                   ),
-                                  title: Text(S.of(context).listMessages),
+                                  title: Text(S.of(context).announcement),
                                   trailing: const Icon(
                                     Icons.arrow_forward_ios,
                                     size: 18,

@@ -110,7 +110,7 @@ class BlogCard extends StatelessWidget {
                     Text(
                       item.date == ''
                           ? 'Loading ...'
-                          : Tools.getTime(item.date, context: context),
+                          : Tools.displayTimeAgoFromTimestamp(item.date),
                       style: TextStyle(
                         color: Theme.of(context).accentColor,
                       ),

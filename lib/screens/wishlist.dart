@@ -125,23 +125,6 @@ class EmptyWishlist extends StatelessWidget {
             children: [
               Expanded(
                 child: ButtonTheme(
-                  height: 45,
-                  child: RaisedButton(
-                      child: Text(S.of(context).startExploring.toUpperCase()),
-                      color: Colors.black,
-                      textColor: Colors.white,
-                      onPressed: () {
-                        Navigator.pushNamed(context, "/home");
-                      }),
-                ),
-              )
-            ],
-          ),
-          const SizedBox(height: 10),
-          Row(
-            children: [
-              Expanded(
-                child: ButtonTheme(
                   height: 44,
                   child: RaisedButton(
                       child: Text(S.of(context).searchForItems.toUpperCase()),
@@ -218,7 +201,7 @@ class WishlistItem extends StatelessWidget {
                               ),
                               const SizedBox(height: 7),
                               Text(
-                                Tools.getTime(blog.date, context: context),
+                                Tools.displayTimeAgoFromTimestamp(blog.date),
                                 style: Theme.of(context)
                                     .textTheme
                                     .headline5

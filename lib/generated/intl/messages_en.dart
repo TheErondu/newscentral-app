@@ -21,19 +21,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static m0(day) => "${day} days ago";
 
-  static m1(hour) => "${hour} hours ago";
+  static m1(hour) => "${hour} hour ago";
 
-  static m2(minute) => "${minute} minutes ago";
+  static m2(hour) => "${hour} hours ago";
 
-  static m3(month) => "${month} months ago";
+  static m3(minute) => "${minute} minutes ago";
 
-  static m4(percent) => "Sale ${percent} %";
+  static m4(month) => "${month} months ago";
 
-  static m5(second) => "${second} seconds ago";
+  static m5(percent) => "Sale ${percent} %";
 
-  static m6(length) => "We found ${length} products";
+  static m6(second) => "${second} seconds ago";
 
-  static m7(year) => "${year} years ago";
+  static m7(length) => "We found ${length} products";
+
+  static m8(year) => "${year} years ago";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
@@ -46,6 +48,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "address" : MessageLookupByLibrary.simpleMessage("Address"),
     "agreeWithPrivacy" : MessageLookupByLibrary.simpleMessage("Privacy and Term"),
     "all" : MessageLookupByLibrary.simpleMessage("All"),
+    "announcement" : MessageLookupByLibrary.simpleMessage("Announcements"),
     "apply" : MessageLookupByLibrary.simpleMessage("Apply"),
     "arabic" : MessageLookupByLibrary.simpleMessage("Arabic"),
     "attributes" : MessageLookupByLibrary.simpleMessage("Attributes"),
@@ -110,7 +113,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "goBackToReview" : MessageLookupByLibrary.simpleMessage("Go back to review"),
     "goBackToShipping" : MessageLookupByLibrary.simpleMessage("Go back to shipping"),
     "home" : MessageLookupByLibrary.simpleMessage("Home"),
-    "hoursAgo" : m1,
+    "hourAgo" : m1,
+    "hoursAgo" : m2,
     "iAgree" : MessageLookupByLibrary.simpleMessage("I agree with"),
     "imageFeature" : MessageLookupByLibrary.simpleMessage("Image Feature"),
     "inStock" : MessageLookupByLibrary.simpleMessage("In stock"),
@@ -124,7 +128,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "lastName" : MessageLookupByLibrary.simpleMessage("Last Name"),
     "lastNameIsRequired" : MessageLookupByLibrary.simpleMessage("The last name field is required"),
     "layout" : MessageLookupByLibrary.simpleMessage("Layouts"),
-    "listMessages" : MessageLookupByLibrary.simpleMessage("Notify Messages"),
     "live" : MessageLookupByLibrary.simpleMessage("Watch TV"),
     "loadFail" : MessageLookupByLibrary.simpleMessage("Load Failed!"),
     "loading" : MessageLookupByLibrary.simpleMessage("Loading..."),
@@ -133,9 +136,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "loginToYourAccount" : MessageLookupByLibrary.simpleMessage("Login to your account"),
     "logout" : MessageLookupByLibrary.simpleMessage("Logout"),
     "manCollections" : MessageLookupByLibrary.simpleMessage("Man Collections"),
-    "minutesAgo" : m2,
+    "minutesAgo" : m3,
     "momentAgo" : MessageLookupByLibrary.simpleMessage("a moment ago"),
-    "monthsAgo" : m3,
+    "monthsAgo" : m4,
     "myCart" : MessageLookupByLibrary.simpleMessage("My Cart"),
     "myPoints" : MessageLookupByLibrary.simpleMessage("My points"),
     "myWishList" : MessageLookupByLibrary.simpleMessage("My Wishlist"),
@@ -188,7 +191,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "remove" : MessageLookupByLibrary.simpleMessage("Remove"),
     "reset" : MessageLookupByLibrary.simpleMessage("Reset"),
     "review" : MessageLookupByLibrary.simpleMessage("review"),
-    "sale" : m4,
+    "sale" : m5,
     "saveAddress" : MessageLookupByLibrary.simpleMessage("Save Address"),
     "saveAddressSuccess" : MessageLookupByLibrary.simpleMessage("Your address is exist in your local"),
     "saveToWishList" : MessageLookupByLibrary.simpleMessage("Save to Wishlist"),
@@ -196,8 +199,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "searchForItems" : MessageLookupByLibrary.simpleMessage("Search for Stories"),
     "searchInput" : MessageLookupByLibrary.simpleMessage("Please write input in search field"),
     "searchingAddress" : MessageLookupByLibrary.simpleMessage("Searching Address"),
-    "secondsAgo" : m5,
-    "seeAll" : MessageLookupByLibrary.simpleMessage("See All"),
+    "secondsAgo" : m6,
+    "seeAll" : MessageLookupByLibrary.simpleMessage("See All Stories"),
     "selectAddress" : MessageLookupByLibrary.simpleMessage("Select Address"),
     "selectTheColor" : MessageLookupByLibrary.simpleMessage("Select the color"),
     "selectTheQuantity" : MessageLookupByLibrary.simpleMessage("Select the quantity"),
@@ -242,13 +245,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "video" : MessageLookupByLibrary.simpleMessage("Video"),
     "vietnamese" : MessageLookupByLibrary.simpleMessage("Vietnam"),
     "weFoundBlogs" : MessageLookupByLibrary.simpleMessage("We Found Blog(s)"),
-    "weFoundProducts" : m6,
+    "weFoundProducts" : m7,
     "webView" : MessageLookupByLibrary.simpleMessage("Videos"),
     "welcome" : MessageLookupByLibrary.simpleMessage("Welcome"),
     "womanCollections" : MessageLookupByLibrary.simpleMessage("Woman Collections"),
     "writeComment" : MessageLookupByLibrary.simpleMessage("Write your comment"),
     "writeYourNote" : MessageLookupByLibrary.simpleMessage("Write your note"),
-    "yearsAgo" : m7,
+    "yearsAgo" : m8,
     "youHavePoints" : MessageLookupByLibrary.simpleMessage("You have \$point points"),
     "youMightAlsoLike" : MessageLookupByLibrary.simpleMessage("You might also like"),
     "yourBagIsEmpty" : MessageLookupByLibrary.simpleMessage("Your bag is empty"),

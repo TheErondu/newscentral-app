@@ -127,6 +127,7 @@ class PostView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      padding: const EdgeInsets.all(15),
       child: Column(
         children: <Widget>[
           HtmlWidget(
@@ -135,7 +136,7 @@ class PostView extends StatelessWidget {
             webViewJs: true,
             hyperlinkColor: Theme.of(context).primaryColor.withOpacity(0.9),
             textStyle: Theme.of(context).textTheme.bodyText2.copyWith(
-                  fontSize: 13.0,
+                  fontSize: 16.0,
                   height: 1.4,
                   color: Theme.of(context).accentColor,
                 ),

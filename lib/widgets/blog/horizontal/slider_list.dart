@@ -201,8 +201,8 @@ class BlogItem extends StatelessWidget {
                           Text(
                             blogs[index].date == ''
                                 ? 'Loading ...'
-                                : Tools.getTime(blogs[index].date,
-                                    context: context),
+                                : Tools.displayTimeAgoFromTimestamp(
+                                    blogs[index].date),
                             textAlign: TextAlign.right,
                             style: TextStyle(
                               color: Theme.of(context).accentColor,
@@ -323,8 +323,8 @@ class BlogItem extends StatelessWidget {
                           Text(
                             blogs[index].date == ''
                                 ? 'Loading ...'
-                                : Tools.getTime(blogs[index].date,
-                                    context: context),
+                                : Tools.displayTimeAgoFromTimestamp(
+                                    blogs[index].date),
                             style: TextStyle(
                               color: Theme.of(context).accentColor,
                             ),
@@ -343,8 +343,9 @@ class BlogItem extends StatelessWidget {
                                       .textTheme
                                       .bodyText2
                                       .copyWith(
-                                          fontSize: 13.0,
+                                          fontSize: 15.0,
                                           height: 1.4,
+                                          fontWeight: FontWeight.w500,
                                           color: Theme.of(context).accentColor),
                                 ),
                         ],

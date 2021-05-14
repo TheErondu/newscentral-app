@@ -9,6 +9,8 @@ import 'intl/messages_all.dart';
 // **************************************************************************
 
 // ignore_for_file: non_constant_identifier_names, lines_longer_than_80_chars
+// ignore_for_file: join_return_with_assignment, prefer_final_in_for_each
+// ignore_for_file: avoid_redundant_argument_values
 
 class S {
   S();
@@ -33,10 +35,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `See All`
+  /// `See All Stories`
   String get seeAll {
     return Intl.message(
-      'See All',
+      'See All Stories',
       name: 'seeAll',
       desc: '',
       args: [],
@@ -893,11 +895,11 @@ class S {
     );
   }
 
-  /// `Notify Messages`
-  String get listMessages {
+  /// `Announcements`
+  String get announcement {
     return Intl.message(
-      'Notify Messages',
-      name: 'listMessages',
+      'Announcements',
+      name: 'announcement',
       desc: '',
       args: [],
     );
@@ -1978,6 +1980,16 @@ class S {
     return Intl.message(
       '$hour hours ago',
       name: 'hoursAgo',
+      desc: '',
+      args: [hour],
+    );
+  }
+
+  /// `{hour} hour ago`
+  String hourAgo(Object hour) {
+    return Intl.message(
+      '$hour hour ago',
+      name: 'hourAgo',
       desc: '',
       args: [hour],
     );

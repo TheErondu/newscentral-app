@@ -1,93 +1,86 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter/services.dart';
-import '../models/videos_list.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Live extends StatefulWidget {
-  //
-  Live({this.videoItem, this.onEnterFullScreen, this.onExitFullScreen});
-  final VideoItem videoItem;
-  final VoidCallback onEnterFullScreen;
-  final VoidCallback onExitFullScreen;
-
   @override
   _LiveState createState() => _LiveState();
 }
 
 class _LiveState extends State<Live> {
-  //
-  YoutubePlayerController _controller;
-  bool _isPlayerReady;
-  bool _fullScreen = true;
+  InAppWebViewController _webViewController;
+  String url = "";
+  double progress = 0;
 
   @override
+
+// ignore: must_call_super
   void initState() {
-    super.initState();
-    _isPlayerReady = false;
-    _controller = YoutubePlayerController(
-      initialVideoId: ('eBicS3yg03c'),
-      flags: const YoutubePlayerFlags(
-        mute: false,
-        autoPlay: true,
-      ),
-    )..addListener(_listener);
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
   }
 
-  void _listener() {
-    if (_isPlayerReady && mounted && !_controller.value.isFullScreen) {
-      //
-    }
-  }
-
-  void listener() {
-    setState(() {
-      _fullScreen = _controller.value.isFullScreen;
-    });
-  }
-
-  @override
-  void deactivate() {
-    _controller.pause();
-    super.deactivate();
-  }
-
-  @override
+  // ignore: must_call_super
   void dispose() {
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
-    _controller.dispose();
-    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: _fullScreen
-          ? null
-          : AppBar(
-              backgroundColor: Colors.black,
-              centerTitle: true,
-              title: Text(
-                widget.videoItem.video.title,
-                style: const TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                ),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.red,
+          title: const Text('News Central Live'),
+        ),
+        body: Container(
+            child: Column(children: <Widget>[
+          Container(
+              child: progress < 1.0
+                  ? LinearProgressIndicator(value: progress)
+                  : Container()),
+          Expanded(
+            child: Container(
+              decoration:
+                  BoxDecoration(border: Border.all(color: Colors.black)),
+              child: InAppWebView(
+                initialUrl:
+                    "https://www.youtube.com/embed/live_stream?channel=UCPLKy4Ypb4mfblbjJI8Aljw",
+                initialHeaders: {},
+                initialOptions: InAppWebViewGroupOptions(
+                    crossPlatform: InAppWebViewOptions(
+                  debuggingEnabled: false,
+                )),
+                onWebViewCreated: (InAppWebViewController controller) {
+                  _webViewController = controller;
+                },
+                onLoadStart: (InAppWebViewController controller, String url) {
+                  setState(() {
+                    this.url = url;
+                  });
+                },
+                onLoadStop:
+                    (InAppWebViewController controller, String url) async {
+                  setState(() {
+                    this.url = url;
+                  });
+                },
+                onProgressChanged:
+                    (InAppWebViewController controller, int progress) {
+                  setState(() {
+                    this.progress = progress / 100;
+                  });
+                },
               ),
             ),
-      body: Container(
-        height: double.infinity,
-        child: YoutubePlayer(
-          controller: _controller,
-          showVideoProgressIndicator: true,
-          onReady: () {
-            print('Player is ready.');
-            _isPlayerReady = true;
-          },
-        ),
+          ),
+        ])),
       ),
     );
   }

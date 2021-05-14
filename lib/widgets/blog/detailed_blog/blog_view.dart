@@ -163,7 +163,7 @@ class BlogCardView extends StatelessWidget {
         children: <Widget>[
           Container(
             width: MediaQuery.of(context).size.width,
-            padding: const EdgeInsets.only(right: 0, left: 10),
+            padding: const EdgeInsets.all(10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[

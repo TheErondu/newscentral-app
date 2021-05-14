@@ -237,8 +237,8 @@ class LargeBlogCard extends StatelessWidget {
                         Text(
                           blogs[index].date == ''
                               ? 'Loading ...'
-                              : Tools.getTime(blogs[index].date,
-                                  context: context),
+                              : Tools.displayTimeAgoFromTimestamp(
+                                  blogs[index].date),
                           style: const TextStyle(
                             color: Colors.white70,
                           ),

@@ -253,8 +253,9 @@ class _OneQuarterImageTypeState extends State<OneQuarterImageType>
                                 Theme.of(context).primaryColor.withOpacity(0.9),
                             textStyle:
                                 Theme.of(context).textTheme.bodyText2.copyWith(
-                                      fontSize: 13.0,
-                                      height: 1.4,
+                                      fontSize: 16.0,
+                                      height: 1.8,
+                                      fontWeight: FontWeight.w500,
                                       color: Theme.of(context).accentColor,
                                     ),
                           ),

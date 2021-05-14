@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:fluxnews/common/styles.dart';
 import 'package:fluxnews/screens/videos_list_screen.dart';
 import 'package:provider/provider.dart';
 

@@ -109,7 +109,7 @@ const kProductDetail = {
 /// config for the chat app
 const smartChat = [
   {
-    'app': 'whatsapp://send?phone=+2348166289825',
+    'app': 'whatsapp://send?phone=+2349011900000',
     'iconData': FontAwesomeIcons.whatsapp
   },
   {'app': 'tel:+2348166289825', 'iconData': FontAwesomeIcons.phone},
