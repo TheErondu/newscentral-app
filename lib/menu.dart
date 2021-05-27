@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:fluxnews/screens/submission.dart';
 import 'package:fluxnews/screens/videos_list_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -154,10 +155,7 @@ class _MenuBarState extends State<MenuBar> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => PostScreen(
-                    pageId: 36011,
-                    pageTitle: S.of(context).submissions.toString(),
-                  ),
+                  builder: (context) => Submission(),
                 ),
               );
             },

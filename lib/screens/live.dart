@@ -51,7 +51,7 @@ class _LiveState extends State<Live> {
                   BoxDecoration(border: Border.all(color: Colors.black)),
               child: InAppWebView(
                 initialUrl:
-                    "https://www.youtube.com/embed/live_stream?channel=UCPLKy4Ypb4mfblbjJI8Aljw",
+                    "http://41.203.80.250/hls/live.m3u8",
                 initialHeaders: {},
                 initialOptions: InAppWebViewGroupOptions(
                     crossPlatform: InAppWebViewOptions(

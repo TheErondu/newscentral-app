@@ -4,7 +4,7 @@ import 'package:event_bus/event_bus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
-const kAppConfig = 'https://config-fluxstore-neodavids.vercel.app';
+const kAppConfig = 'lib/config/config_en.json';
 
 class Constants {
   //

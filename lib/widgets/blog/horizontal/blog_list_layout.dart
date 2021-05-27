@@ -8,6 +8,8 @@ import '../../../services/wordpress.dart';
 import '../../../widgets/blog/blog_staggered.dart';
 import '../../../widgets/blog_news/blog_card_view.dart';
 import '../header/header_view.dart';
+import'../header/ad_section.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 
 class BlogListLayout extends StatefulWidget {
   final config;
@@ -105,6 +107,12 @@ class _ProductListItemsState extends State<BlogListLayout> {
                           config: widget.config,
                           blogs: snapshot.data),
                     ),
+                      // HtmlWidget(
+                      //   'Hello World',
+                      //   webView: true,
+                      // ),
+
+
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(

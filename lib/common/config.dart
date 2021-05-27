@@ -108,12 +108,9 @@ const kProductDetail = {
 
 /// config for the chat app
 const smartChat = [
-  {
-    'app': 'whatsapp://send?phone=+2349011900000',
-    'iconData': FontAwesomeIcons.whatsapp
-  },
-  {'app': 'tel:+2348166289825', 'iconData': FontAwesomeIcons.phone},
-  {'app': 'sms://+2348166289825', 'iconData': FontAwesomeIcons.sms},
+  {'app': 'whatsapp://send?phone=+', 'iconData': FontAwesomeIcons.whatsapp},
+  {'app': 'tel:+', 'iconData': FontAwesomeIcons.phone},
+  {'app': 'sms://+', 'iconData': FontAwesomeIcons.sms},
   // {'app': 'firebase', 'iconData': FontAwesomeIcons.google},
   // {'app': 'intercome', 'iconData': FontAwesomeIcons.intercom},
 ];
@@ -126,7 +123,7 @@ const kIntercomAPIKey = {
 };
 
 const kAdConfig = {
-  "enabled": false,
+  "enabled": true,
   "type": kAdType.googleReward,
   // ----------------- Facebook Ads  -------------- //
 
@@ -138,14 +135,14 @@ const kAdConfig = {
 
   // ------------------ Google Admob  -------------- //
 
-  "androidAppId": "ca-app-pub-2101182400000000~7554000316",
-  "androidUnitBanner": "ca-app-pub-2101182400000000~7554000316",
-  "androidUnitInterstitial": "ca-app-pub-2101182400000000~7554000316",
-  "androidUnitReward": "ca-app-pub-2101182400000000~7554000316",
-  "iosAppId": "ca-app-pub-2101182400000000~7554000316",
-  "iosUnitBanner": "ca-app-pub-2101182400000000/5418791562",
-  "iosUnitInterstitial": "ca-app-pub-2101182400000000/9218413691",
-  "iosUnitReward": "ca-app-pub-2101182400000000/9026842008",
+  "androidAppId": "ca-app-pub-1197955365244217~7855626830",
+  "androidUnitBanner": "ca-app-pub-1197955365244217~7855626830",
+  "androidUnitInterstitial": "ca-app-pub-1197955365244217~7855626830",
+  "androidUnitReward": "ca-app-pub-1197955365244217~7855626830",
+  "iosAppId": "ca-app-pub-1197955365244217~7430947396",
+  "iosUnitBanner": "ca-app-pub-1197955365244217~7430947396",
+  "iosUnitInterstitial": "ca-app-pub-1197955365244217~7430947396",
+  "iosUnitReward": "ca-app-pub-1197955365244217~7430947396",
   "waitingTimeToDisplayInterstitial": 3,
   "waitingTimeToDisplayReward": 3,
 };

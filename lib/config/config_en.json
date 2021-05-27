@@ -1,20 +1,12 @@
-{
-  "HorizonLayout": [
-    {
-      "showMenu": true,
-      "showLogo": true,
-      "layout": "logo",
-      "image": "assets/images/logo.gif",
-      "showSearch": true
-    },
-    {
-      "title": "The Hub for stories across Africa",
-      "fontSize": 30,
-      "isSafeArea": false,
-      "layout": "header_text",
-      "padding": 20
-    },
-    {
+{"HorizonLayout": [
+  {
+    "showMenu": true,
+    "showLogo": true,
+    "layout": "logo",
+    "image": "assets/images/logo.gif",
+    "showSearch": true
+  },
+  {
       "design": "default",
       "radius": 2,
       "isSlider": true,
@@ -28,130 +20,105 @@
       ],
       "layout": "bannerImage"
     },
-    {
-      "VerticalLayout": {
-        "layout": "card",
-        "name": "News",
-        "imageBorder": 20
-      }
-    },
-    {
-      "category": 298,
-      "layout": "sliderList",
-      "type": "imageOnTheLeft",
-      "name": "Latest News",
-      "imageBorder": 20
-    },
-    {
-      "layout": "sliderList",
-      "name": "Politics",
-      "type": "imageOnTheLeft",
-      "category": 5,
-      "imageBorder": 6
-    },
-    {
-      "layout": "sliderList",
-      "name": "Business",
-      "type": "imageOnTheLeft",
-      "category": 2,
-      "imageBorder": 6
-    },
-    {
-      "layout": "sliderList",
-      "name": "Sports",
-      "type": "imageOnTheLeft",
-      "category": 6,
-      "imageBorder": 6
-    },
-    {
-      "layout": "sliderList",
-      "name": "Entertainment",
-      "type": "imageOnTheLeft",
-      "category": 35454,
-      "imageBorder": 6
-    },
-    {
-      "category": 247,
-      "layout": "sliderList",
-      "type": "imageOnTheLeft",
-      "name": "Most Read",
-      "imageBorder": 20
-    }
+  {
+  "name":"Politics",
+  "layout":"twoColumn",
+  "isSnapping":true,
+  "category":5
+  },
+  {
+  "name":"Business",
+  "category":2,
+  "layout":"twoColumn",
+  "isSnapping":true
+  },
+  {
+  "isSnapping":true,
+  "layout":"twoColumn",
+  "category":6,
+  "name":"Sports"
+  }
   ],
-  "Setting": {
-    "MainColor": "#951512",
-    "ProductListLayout": "list",
-    "StickyHeader": true
+  "Setting":{
+  "MainColor":"#951512",
+  "ProductListLayout":"list",
+  "StickyHeader":true
   },
   "TabBar": [
-    {
-      "layout": "home",
-      "icon": "assets/icons/tabs/icon-home.png",
-      "text": "Home",
-      "pos": 100,
-      "size": 30
-    },
-    {
-      "pos": 300,
-      "showChat": false,
-      "icon": "assets/icons/tabs/icon-wishlist.png",
-      "layout": "wishlist"
-    },
-    {
-      "pos": 400,
-      "icon": "assets/icons/tabs/icon-search.png",
-      "layout": "search"
-    },
-    {
-      "layout": "profile",
-      "settings": [
-        "wishlist",
-        "post",
-        "notifications",
-        "language",
-        "darkTheme",
-        "privacy"
-      ],
-      "showChat": false,
-      "icon": "assets/icons/tabs/icon-settings.png",
-      "pos": 500
-    }
-  ],
-  "Drawer": {
-    "logo": "assets/images/settings-back.jpg",
-    "items": [
       {
-        "type": "home",
-        "show": true
+        "layout": "home",
+        "icon": "assets/icons/tabs/icon-home.png",
+        "text": "Home",
+        "pos": 100,
+        "size": 30
       },
       {
-        "type": "web",
-        "show": true
+        "pos": 300,
+        "showChat": false,
+        "icon": "assets/icons/tabs/icon-wishlist.png",
+        "layout": "wishlist"
       },
       {
-        "type": "live",
-        "show": true
+        "pos": 400,
+        "icon": "assets/icons/tabs/icon-search.png",
+        "layout": "search"
       },
       {
-        "type": "submissions",
-        "show": true
-      },
-      {
-        "type": "about",
-        "show": true
-      },
-      {
-        "type": "login",
-        "show": false
-      },
-      {
-        "type": "category",
-        "show": true
+        "layout": "profile",
+        "settings": [
+          "wishlist",
+          "post",
+          "notifications",
+          "language",
+          "darkTheme",
+          "privacy"
+        ],
+        "showChat": false,
+        "icon": "assets/icons/tabs/icon-settings.png",
+        "pos": 500
       }
-    ]
+    ],
+  "Drawer": {
+      "logo": "assets/images/settings-back.jpg",
+      "items": [
+        {
+          "type": "home",
+          "show": true
+        },
+        {
+          "type": "web",
+          "show": true
+        },
+        {
+          "type": "live",
+          "show": true
+        },
+        {
+          "type": "submissions",
+          "show": true
+        },
+        {
+          "type": "about",
+          "show": true
+        },
+        {
+          "type": "login",
+          "show": false
+        },
+        {
+          "type": "category",
+          "show": true
+        }
+      ]
+    },
+  "VerticalLayout":{
+  "key":"5p89g5dav7",
+  "layout":"card",
+  "name":"Explore now",
+  "category":202
   },
   "SplashScreen": {
-    "data": "assets/images/splashscreen.png",
-    "type": "animated"
-  }
+      "data": "assets/images/splashscreen.png",
+      "type": "animated"
+    }
 }
